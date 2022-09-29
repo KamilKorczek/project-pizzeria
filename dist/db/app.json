@@ -204,38 +204,29 @@
   ],
   "orders": [
     {
+      "address": "",
+      "phone": "",
+      "products": [],
+      "id": 1
+    },
+    {
       "address": "Czajowice",
       "phone": "3232",
-      "totalPrice": 65,
-      "subtotalPrice": 45,
-      "totalNumber": 5,
+      "totalPrice": 38,
+      "subtotalPrice": 18,
+      "totalNumber": 2,
       "deliveryFee": 20,
       "products": [
         {
           "id": "cake",
-          "amount": 3,
-          "price": 27,
-          "priceSingle": 9,
-          "name": "Zio Stefano's Doughnut",
-          "params": {}
-        },
-        {
-          "id": "breakfast",
           "amount": 2,
           "price": 18,
           "priceSingle": 9,
-          "name": "Zia Giulia's Breakfast",
-          "params": {
-            "coffee": {
-              "label": "Coffee type",
-              "options": {
-                "latte": "Latte"
-              }
-            }
-          }
+          "name": "Zio Stefano's Doughnut",
+          "params": {}
         }
       ],
-      "id": 1
+      "id": 2
     }
   ]
 }
