@@ -107,9 +107,9 @@ const app = {
   initBooking: function() {
     const thisApp = this;
 
-    thisApp.booking = document.querySelector(select.containerOf.booking);
+    const bookingWidget = document.querySelector(select.containerOf.booking);
     //console.log(thisApp.booking);
-    thisApp.widget = new Booking(thisApp.booking);
+    thisApp.widget = new Booking(bookingWidget);
   },
 
   init: function(){
@@ -119,8 +119,8 @@ const app = {
     //console.log('classNames:', classNames);
     //console.log('settings:', settings);
     //console.log('templates:', templates);
+    
     thisApp.initPages();
-
     thisApp.initData();
     thisApp.initCart();
     thisApp.initBooking();
