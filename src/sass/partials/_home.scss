@@ -22,7 +22,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  gap: ($base-size / 2);
+  gap: $base-size_2;
 }
 
 .box {
@@ -85,7 +85,7 @@ h4 {
   color: $color-light;
   text-align: center;
   flex: 100%;
-  margin: ($base-size / 2) 0;
+  margin: $base-size_2 0;
   padding: ($base-size * 2) 0;
 }
 
@@ -143,7 +143,7 @@ h4 {
 .gallery {
   display: flex;
   flex-direction: row;
-  margin: ($base-size / 2) auto;
+  margin: $base-size_2 auto;
   justify-content: space-between;
   gap: 12px;
 }
@@ -154,7 +154,7 @@ h4 {
 
 .picture-wrapper::after {
   position: absolute;
-  padding: $base-size / 4 $base-size / 2;
+  padding: $base-size_4 $base-size_2;
   width: 193px;
   height: 193px;
   border-radius: $radius;
