@@ -3,12 +3,14 @@ export const select = {
     menuProduct: '#template-menu-product',
     cartProduct: '#template-cart-product',
     bookingWidget: '#template-booking-widget',
+    homePage: '#template-home',
   },
   containerOf: {
     menu: '#product-list',
     cart: '#cart',
     pages: '#pages',
     booking: '.booking-wrapper',
+    home: '.home-wrapper',
   },
   all: {
     menuProducts: '#product-list > .product',
@@ -38,6 +40,9 @@ export const select = {
       input: 'input[type="range"]',
       output: '.output',
     },
+    flickity: {
+      carousel: '.main-carousel',
+    }
   },
   cart: {
     productList: '.cart__order-summary',
@@ -71,6 +76,9 @@ export const select = {
   nav: {
     links: '.main-nav a',
   },
+  home: {
+    homeLinks: '.home-button',
+  },
 };
 
 export const classNames = {
@@ -101,8 +109,8 @@ export const classNames = {
 export const settings = {
   amountWidget: {
     defaultValue: 1,
-    defaultMin: 1,
-    defaultMax: 9,
+    defaultMin: 0,
+    defaultMax: 10,
   },
   cart: {
     defaultDeliveryFee: 20,
@@ -134,4 +142,5 @@ export const templates = {
   menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
   cartProduct: Handlebars.compile(document.querySelector(select.templateOf.cartProduct).innerHTML),
   bookingWidget: Handlebars.compile(document.querySelector(select.templateOf.bookingWidget).innerHTML),
+  homePage: Handlebars.compile(document.querySelector(select.templateOf.homePage).innerHTML),
 };
